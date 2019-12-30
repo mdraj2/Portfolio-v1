@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Budget-app\r ========\r Description\r --------\r This is a simple budget app that keeps track of income and expenses",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server --browser=CHROME",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.2"
+  }
+}

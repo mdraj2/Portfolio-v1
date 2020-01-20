@@ -2,23 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt&display=swap"
+      href="https://fonts.googleapis.com/css?family=Long+Cang|Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="main">
-      <section class="left">
+      <article class="left">
         <section class="section-welcome">
           <h1 class="welcome__title heading-primary">
             Welcome to my portfolio!
           </h1>
           <p class="paragraph">
-            My name is Malith and I am a front end developer. Check out the my
-            projects on the right!
+            My name is Malith and I am a front end developer. Check out my
+            projects!
           </p>
         </section>
 
@@ -28,7 +32,33 @@
             <img class="skills__img" src="./img/javascript.svg" alt="jsImg" />
             <img class="skills__img" src="./img/css3.svg" alt="cssImg" />
             <img class="skills__img" src="./img/html5.svg" alt="htmlImg" />
-            <img class="skills__img" src="./img/react.svg" alt="reactImg" />
+            <img
+              class="skills__img"
+              src="./img/reactImg-small.svg"
+              alt="reactImg"
+            />
+          </div>
+        </section>
+
+        <section class="section-portfolio">
+          <h3 class="portfolio__title heading-secondary">Portfolio</h3>
+          <div class="portfolio__item">
+            <div class="portfolio__item--1">
+              <a class="btn btn--small btn--whitered" href="#">Website</a>
+              <a class="btn btn--small btn--whitered" href="#">Code</a>
+            </div>
+            <div class="portfolio__item--2">
+              <a class="btn btn--small btn--whitered" href="#">Website</a>
+              <a class="btn btn--small btn--whitered" href="#">Code</a>
+            </div>
+            <div class="portfolio__item--3">
+              <a class="btn btn--small btn--whitered" href="#">Website</a>
+              <a class="btn btn--small btn--whitered" href="#">Code</a>
+            </div>
+            <div class="portfolio__item--4">
+              <a class="btn btn--small btn--whitered" href="#">Website</a>
+              <a class="btn btn--small btn--whitered" href="#">Code</a>
+            </div>
           </div>
         </section>
 
@@ -38,32 +68,32 @@
               Get in touch with me!
             </h3>
             <p class="paragraph">
-              Thanks for looking at my portfolio! Do you have a question for me,
-              or perhaps some feedback?
+              Thanks for looking at my portfolio! Do you have any questions for
+              me?
             </p>
             <ul class="contactme__list">
               <li class="socialmedia">
-                <a href="">
+                <a href="https://github.com/mdraj2">
                   <img
                     class="socialmedia__image"
                     src="./img/github.svg"
-                    alt=""
+                    alt="githubImg"
                   />
                   <p class="paragraph"></p>
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/malith-rajapakse/">
                   <img
                     class="socialmedia__image"
                     src="./img/linkedin.svg"
-                    alt=""
+                    alt="linkedinImg"
                   />
                   <p class="paragraph"></p>
                 </a>
-                <a href="">
+                <a href="mailto:malith.rajapakse@gmail.com">
                   <img
                     class="socialmedia__image"
-                    src="./img/gmail.svg"
-                    alt=""
+                    src="./img/gmail-small.svg"
+                    alt="gmailImg"
                   />
                   <p class="paragraph"></p>
                 </a>
@@ -71,15 +101,29 @@
             </ul>
           </div>
         </section>
-      </section>
-      <section class="right">
+      </article>
+      <article class="right">
         <section class="section-portfolio">
-          <div class="portfolio__item portfolio__item--1">To Update</div>
-          <div class="portfolio__item portfolio__item--2">To Update</div>
-          <div class="portfolio__item portfolio__item--3">To Update</div>
-          <div class="portfolio__item portfolio__item--4">To Update</div>
+          <div class="portfolio__item">
+            <div class="portfolio__item--1">
+              <a class="btn btn--small btn--whitered" href="#">Website</a>
+              <a class="btn btn--small btn--whitered" href="#">Code</a>
+            </div>
+            <div class="portfolio__item--2">
+              <a class="btn btn--small btn--whitered" href="#">Website</a>
+              <a class="btn btn--small btn--whitered" href="#">Code</a>
+            </div>
+            <div class="portfolio__item--3">
+              <a class="btn btn--small btn--whitered" href="#">Website</a>
+              <a class="btn btn--small btn--whitered" href="#">Code</a>
+            </div>
+            <div class="portfolio__item--4">
+              <a class="btn btn--small btn--whitered" href="#">Website</a>
+              <a class="btn btn--small btn--whitered" href="#">Code</a>
+            </div>
+          </div>
         </section>
-      </section>
+      </article>
     </main>
   </body>
 </html>

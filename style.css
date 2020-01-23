@@ -76,7 +76,7 @@ body::after {
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 2rem;
   word-break: break-all;
   white-space: normal;
 }
@@ -138,7 +138,7 @@ body::after {
 .portfolio__item > * {
   width: 30rem;
   height: 30rem;
-  background-image: radial-gradient(#9b3842 50%, #7d101c);
+  background-size: cover;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -149,44 +149,56 @@ body::after {
   box-shadow: 2px 2px 2px black;
 }
 
-.portfolio__item > *:hover .btn {
-  opacity: 1;
-}
-
 .portfolio__item--1 {
   grid-row: 2/8;
+  background-image: radial-gradient(
+      rgba(155, 56, 66, 0.5) 50%,
+      rgba(125, 16, 28, 0.5)
+    ),
+    url("img/AllFoods.PNG");
+}
+
+.portfolio__item > *:hover {
+  background-image: url("img/AllFoods.PNG");
 }
 
 .portfolio__item--2 {
   grid-row: 8/14;
+  display: none;
 }
 
 .portfolio__item--3 {
   grid-row: 1/7;
+  display: none;
 }
 
 .portfolio__item--4 {
   grid-row: 7/13;
+  display: none;
 }
 
 .btn {
   opacity: 0;
   width: 50%;
   height: 5rem;
-  background-color: transparent;
+  background-color: rgba(125, 16, 28);
   color: white;
-  border: 3px solid white;
+  border: 3px solid black;
   border-radius: 50px;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.1s;
+  transition: all 0.5s;
 }
 
 .btn:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.portfolio__item > *:hover .btn {
+  opacity: 1;
 }
 
 .left .portfolio__item,
@@ -212,8 +224,10 @@ body::after {
 
   .left .portfolio__item {
     display: inline-grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: repeat(6, 8.3rem);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    /*     grid-template-columns: min-content min-content;
+    grid-template-rows: repeat(6, 8.3rem); */
   }
 
   .portfolio__title {

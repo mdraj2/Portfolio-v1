@@ -1,5 +1,5 @@
-Budget-app
+Portfolio-v1
 ========
 Description
 --------
-This is a simple budget app that keeps track of income and expenses
+Current Portfolio
